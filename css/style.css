@@ -7,6 +7,23 @@
 font-family: 'Wendy One', sans-serif;
 font-family: 'Lato', sans-serif; */
 
+:root {
+  --primary-color:#FCFBFD;
+  --secondary-color: #55538A;
+  --third-color:#C9F4FF;
+  --fourth-color:#ffff;
+  --linear-color: linear-gradient(108.56deg, rgba(255, 255, 255, 0) -13.21%, #C9F4FF 98.78%);
+  --fifth-color:#000;
+}
+.dark-mode{
+
+  --primary-color:#1e2749;
+  --secondary-color: #deddf9;
+  --third-color:#404a6e;
+  --fourth-color:#404a6e;
+  --linear-color:#1e2749;
+  --fifth-color:#deddf9;
+}
 
 
 *{
@@ -17,19 +34,19 @@ font-family: 'Lato', sans-serif; */
 
 body{
   padding: 0px 0px;
-  background-color: #FCFBFD;
+  background-color: var(--primary-color);
   font-family: 'Lato', sans-serif; 
 }
 #logo{
   font-family: 'Wendy One', sans-serif;
   font-size: 30px;
   width: 15%;
-  color: #55538A;
+  color: var(--secondary-color);
   }
   #nav{
   border-radius: 100px;
   padding: 5px 15px;
-  background-color: #fff;
+  background-color: var(--fourth-color);
   margin: 10px 64px;
   }
   #menu{
@@ -40,24 +57,24 @@ body{
   }
   #menuList a{
   font-weight: 600;
-  color: #55538A;
+  color: var(--secondary-color);
   border-radius:50px ;
    }
   #profileImage{
-  width: 47px;
+  width: 40px;
   }
   .containerMenuList{
   justify-content: space-between;
   }
   ul a {
       text-decoration: none;
-      color: #55538A;
+      color: var(--secondary-color);
       margin-left: 7px;
   }
 @media(max-width:768px){
   body{
   padding: 0;
-  background-color: #FCFBFD;
+  background-color: var(--primary-color);
   }
   #nav{
   border-radius: 0;
@@ -71,7 +88,7 @@ body{
   .dropdown {
     position: relative;
     display: inline-block;
-    margin-left: 850px;
+    margin-left: px;
   }
   @media (max-width:1440px) {
     .dropdown {
@@ -123,7 +140,7 @@ body{
   }
       
 .linear-bg{
-  background: linear-gradient(108.56deg, rgba(255, 255, 255, 0) -13.21%, #C9F4FF 98.78%);
+  background:var(--linear-color);
   height:98vh;
 
 }
@@ -144,7 +161,7 @@ body{
 }
 .header-container h1{
   margin-top: 8rem;
-  color: #3d3c6e;
+  color: var(--secondary-color);
   font-weight: 500;
   font-size:45px ;
   position: absolute;
@@ -164,9 +181,9 @@ body{
   left: 7.5rem;
   width: 12rem;
   height: 3rem;
-  background-color: #3d3c6e;
+  background-color: var(--secondary-color);
   border-radius: 40px;
-  color: #ffffff;
+  color: var(--primary-color);
   display: grid;
   place-items: center;
   font-size: 24px;
@@ -190,7 +207,6 @@ display: flex;
 align-items: center;
 justify-content: center;
 flex-direction: column;
-background-image: url(../assets/Group\ 1.svg);
 
 }
 
@@ -203,6 +219,7 @@ background-image: url(../assets/Group\ 1.svg);
 
 .text_container :nth-child(2){
   font-size: 1.2rem;
+  color: var(--fifth-color);
 }
 
 
@@ -216,25 +233,28 @@ background-image: url(../assets/Group\ 1.svg);
 .box{
   width: 187px;
   height: 187px;
-  background-color: #ffffff;
+  background-color: var(--fourth-color);
   position: relative;
   box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;border-radius: 15px;
   transition: all;
  
 }
+.about-p{
+  color:var(--fifth-color);
+}
 #main_button{
   width: 130px;
   height: 40px;
-  background-color: #55538A;
+  background-color: var(--secondary-color);
   border: none;
   border-radius: 40px;
-  color: #fff;
+  color: var(--fourth-color);
   margin: 1rem;
   transition: all .2s ease-in-out; 
 }
 #main_button:hover{ transform: scale(1.1);
-  background-color: #C9F4FF;
-  color: #3d3c6e;
+  background-color: var(--third-color);
+  color: var(--secondary-color);
 
 }
 
@@ -276,26 +296,26 @@ background-image: url(../assets/Group\ 1.svg);
   position: absolute;
   bottom: 10px;
   right: 55px;
-  color: #55538A;
+  color: var(--secondary-color);
 }
 .text_two {
   position: absolute;
   bottom: 10px;
   right: 62px;
-  color: #55538A;
+  color: var(--secondary-color);
 
 }
 .text_three {
   position: absolute;
   bottom: 10px;
   right: 45px;
-  color: #55538A;
+  color: var(--secondary-color);
 }
 .text_four {
   position: absolute;
   bottom: 10px;
   right:70px;
-  color: #55538A;
+  color: var(--secondary-color);
 }
 .blue-box-row{
   margin-top: 7rem;
@@ -350,7 +370,7 @@ background-image: url(../assets/Group\ 136\ 1.svg);
 .monster-h1{
   font-family: 'Wendy One', sans-serif;
   font-size: 3.8rem;
-  color: #55538A;
+  color: var(--secondary-color);
 }
 .Friends-word{
   color: #F7941F;
@@ -365,7 +385,7 @@ background-image: url(../assets/Group\ 136\ 1.svg);
 .monster-div1{
 width: 290px;
 height: 340px;
-background: #ffffff;
+background: var(--fourth-color);
 border-radius: 20px;
 margin-top: 80px;
 position: relative;
@@ -379,7 +399,7 @@ background-image: url(../assets/red.svg);
 color: #fff;
 }
 .monster-div1:hover .text{
-color: #fff;
+color: var(--primary-color);
 }
 .monster-div1:hover img{ 
   animation: rotate-btn .80s linear 1;
@@ -427,11 +447,12 @@ color: #fff;
   width: 80%;
   text-align: center;
   margin-left: 1.1REM;
+  color: var(--fifth-color);
 }
 .monster-div2{
   width: 290px;
   height: 340px;
-  background-color: #fff;
+  background-color: var(--fourth-color);
  
   border-radius: 20px;
   margin-top: 80px;
@@ -441,6 +462,9 @@ color: #fff;
 }
 .monster-div2:hover{ transform: scale(1.1);
 background-image: url(../assets/orangbg.svg); }
+.monster-div2:hover .text{
+  color: var(--primary-color);
+  }
 
 .monster-div2:hover img{ 
   animation: rotate-btn .80s linear 1;
@@ -477,14 +501,14 @@ background-image: url(../assets/orangbg.svg); }
   right: 110px;
   font-weight: 800;
   font-size: 32px;
-  color: #55538A;
+  color: var(--secondary-color);
   font-family: 'Viga', sans-serif;
  
 }
 .monster-div3{
   width: 290px;
   height: 340px;
-  background: #ffffff;
+  background: var(--fourth-color);
   border-radius: 20px;
   margin-top: 80px;
   position: relative;
@@ -493,6 +517,9 @@ background-image: url(../assets/orangbg.svg); }
 }
 .monster-div3:hover{ transform: scale(1.1);
 background-image: url(../assets/blue.svg); }
+.monster-div3:hover .text{
+  color: var(--primary-color);
+  }
 .monster-div3 img {
   width: 60%;
   position: absolute;
@@ -543,7 +570,7 @@ background-image: url(../assets/blue.svg); }
 
 .footer-row{
   margin-top:10rem;
-  background-color: #CCF6ff;
+  background-color: var(--third-color);
  
   
  
@@ -568,7 +595,7 @@ ul p{
 }
 ul a {
   text-decoration: none;
-  color: #55538A;
+  color: var(--secondary-color);
   margin-left: 7px;
 }
 .footer3-join{
@@ -593,7 +620,7 @@ ul a {
 .small-text{
   font-family: 'Lato', sans-serif;   
   font-size: 16px;
-  color: #55538A;
+  color: var(--secondary-color);
 }
 .icons{
   display: flex;
@@ -734,7 +761,7 @@ margin-top: 10rem;
 
   .header-container h1{
    margin-top: 8rem;
-   color: #3d3c6e;
+   color: var(--secondary-color);
    font-weight: 500;
    font-size:25px ;
    position: absolute;
@@ -763,7 +790,7 @@ margin-top: 10rem;
        width: 13rem;
        height: 3rem;
         border-radius: 40px;
-       color: #3d3c6e;
+       color: var(--primary-color);
        display: grid;
        place-items: center;
        font-size: 24px;
@@ -787,7 +814,7 @@ margin-top: 10rem;
    
    .about-quiz :nth-child(1){
        font-family: 'Wendy One', sans-serif;
-       color: #55538A;
+       color: var(--secondary-color);
        font-size: 3rem;
        align-self: center;
        margin-top: 3rem;
@@ -806,7 +833,7 @@ margin-top: 10rem;
    .monster-h1{
       justify-self: start;
        font-size: 3rem;
-       color: #55538A;
+       color: var(--secondary-color);
    }
    .Friends-word{
        color: #F7941F;
@@ -853,7 +880,7 @@ margin-top: 10rem;
        width: 8rem;
        height: 2.5rem;
        border-radius: 40px;
-       color: #3d3c6e;
+       color: var(--secondary-color);
        display: grid;
        place-items: center;
        font-size: 18px;
@@ -901,7 +928,7 @@ margin-top: 10rem;
    }
    .about-quiz :nth-child(1){
        font-family: 'Wendy One', sans-serif;
-       color: #55538A;
+       color: var(--secondary-color);
        font-size: 2rem;
        margin-right: 1.5rem;
       
@@ -924,7 +951,7 @@ margin-top: 10rem;
    .monster-h1{
       justify-self: start;
        font-size: 1.1rem;
-       color: #55538A;
+       color: var(--secondary-color);
    }
    .Friends-word{
        color: #F7941F;
@@ -985,7 +1012,7 @@ margin-top: 10rem;
    .monster-h1{
      font-family: 'Wendy One', sans-serif;
    font-size: 2rem;
-   color: #55538A;
+   color: var(--secondary-color);
    margin-left: 1.7rem;
    }
   
@@ -993,7 +1020,7 @@ margin-top: 10rem;
   @media (max-width: 322px) {
    .header-container h1{
      margin-top: 8rem;
-     color: #3d3c6e;
+     color: var(--secondary-color);
      font-weight: 500;
      font-size:20px ;
      position: absolute;
@@ -1026,7 +1053,7 @@ margin-top: 10rem;
        width: 8rem;
        height: 2.5rem;
        border-radius: 40px;
-       color: #3d3c6e;
+       color: var(--secondary-color);
        display: grid;
        place-items: center;
        font-size: 18px;
@@ -1056,7 +1083,7 @@ margin-top: 10rem;
    }
    .about-quiz :nth-child(1){
        font-family: 'Wendy One', sans-serif;
-       color: #55538A;
+       color: var(--secondary-color);
        font-size: 2rem;
        margin-right: 1.5rem;
       
@@ -1079,7 +1106,7 @@ margin-top: 10rem;
    .monster-h1{
       justify-self: start;
        font-size: 1.1rem;
-       color: #55538A;
+       color: var(--secondary-color);
    }
    .Friends-word{
        color: #F7941F;
@@ -1140,8 +1167,14 @@ margin-top: 10rem;
    .monster-h1{
      font-family: 'Wendy One', sans-serif;
    font-size: 2rem;
-   color: #55538A;
+   color: var(--secondary-color);
    margin-left: 1.7rem;
    }
   
+ }
+
+ #icon{
+  cursor: pointer;
+  margin-left: 50rem;
+  margin-right: 3rem;
  }
