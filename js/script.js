@@ -32,9 +32,9 @@ function reveal() {
   icon.onclick = function(){
     document.body.classList.toggle('dark-mode');
     if (document.body.classList.contains("dark-mode")){
-      icon.src='../assets/contrast (1).png'
+      icon.src='assets/contrast (1).png'
     }
     else {
-      icon.src='../assets/moon (2).png';
+      icon.src='assets/moon (2).png';
     }
   }
